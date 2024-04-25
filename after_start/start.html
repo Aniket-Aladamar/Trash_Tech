@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Route</title>
+    <link rel="stylesheet" href="start.css">
+    <script type="module" src="./start.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    
+</head>
+<body>
+        <header class="header">
+            <div class="menu-icon">
+                <img src=".././images/menu.png"alt ="menu"/>
+                </div>
+                <h1 class="logo-text">Trashtech.</h1>
+            <div class="settings">
+            <img src=".././images/settings.png" alt="setting"/>
+        </div>
+        </header>
+        <div class="map-container">
+            <div id="map">
+            <!-- prettier-ignore -->
+            <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+            ({key: "AIzaSyCx5p5ZzCVcwa9EU9qKqIJnsL_It-BZtLw", v: "weekly"});</script>
+        </div>
+    </div>
+        
+        <h2 class="next-bin-heading"><b>Next bin</b></h2>
+
+        <section class="direction-info">
+            <div class="direction-icon-wrapper">
+                <img src=".././images/turn.jpg"/>
+                <p class="direction-text">
+                    Turn <br />
+                    <span>Right</span>
+                </p>
+            </div>
+            <div class="route-info">
+                <div class="route-divider"></div>
+                <div class="route-marker"></div>
+                <p class="route-text">
+                    2nd main, <br />
+                    chord rd
+                </p>
+            </div>
+        </section>
+
+        <h2 class="status-heading"><b>Status</b></h2>
+
+        <div class="status-item">
+            <p class="status-label">Total Bins</p>
+            <p class="status-value">52</p>
+        </div>
+
+        <div class="status-item">
+            <p class="status-label">Bins collected</p>
+            <p class="status-value green">18</p>
+        </div>
+
+        <div class="status-item">
+            <p class="status-label">Bins missed</p>
+            <p class="status-value yellow">02</p>
+        </div>
+
+        <div class="report-button-container">
+            <button class="report-button" onclick="window.location.href='.././RepairRequst/index.html' ">Report missing bin</button>        </div>
+</body>
+</html>

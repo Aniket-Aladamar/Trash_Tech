@@ -1,0 +1,139 @@
+body {
+    font-family: Gilroy-Bold, sans-serif;
+    background-color: #f0f0f0;
+    margin: 10px;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    gap: 10px;
+    font-size: 17px;
+    color: #5fa560;
+    font-weight: 300;
+    white-space: nowrap;
+    margin-top: 0%;
+}
+
+.menu {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px;
+    position: fixed;
+    top: 10px;
+    left: 0;
+    padding-left: 10px;
+}
+
+.brand-name {
+    font-family: Gilroy-Bold, sans-serif;
+    align-items: center;
+    display: flex;
+    position: fixed;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.setting {
+    width: 34px;
+    height: 34px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+    position: fixed;
+    top: 10px;
+    right: 0;
+    padding-right: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    border-color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+.schedule-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 15px;
+    font-weight: 120;
+}
+
+.schedule{
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+textarea {
+    width: 90%; /* Adjust as needed */
+    max-width: 90%; /* Prevents the textarea from exceeding its parent's width */
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease; /* Adds a transition effect */
+    border-radius: 5px; /* Rounds the corners of the button */
+}
+
+button:hover {
+    background-color: #45a049; /* Changes the background color when hovered */
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); /* Adds a shadow when hovered */
+}
+
+textarea, select, input[type="text"] {
+    width: 90%; /* Adjust as needed */
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px; /* Rounds the corners of the input boxes */
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+}
+
+textarea:focus, select:focus, input[type="text"]:focus {
+    border: 1px solid #4CAF50; /* Changes the border color when the input box is focused */
+}

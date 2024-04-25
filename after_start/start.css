@@ -1,0 +1,198 @@
+body {
+    margin: 20px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    flex-direction: column;
+    scroll-behavior: smooth;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    gap: 10px;
+    font-size: 17px;
+    color: #5fa560;
+    font-weight: 300;
+    white-space: nowrap;
+    margin-top: 0%
+}
+
+.menu-icon {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px;
+    position: fixed;
+    top: 10px;
+    left: 0;
+    padding-left: 10px;
+}
+
+.logo-text {
+    font-family: Gilroy-Bold, sans-serif;
+    align-items: center;
+    display: flex;
+    position: fixed;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.settings {
+    width: 34px;
+    height: 34px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+    position: fixed;
+    top: 10px;
+    right: 0;
+    padding-right: 20px;
+}
+.map-container {
+    position: relative;
+    display: flex;
+    aspect-ratio: 0.9;
+    margin-top: 20px;
+    align-items: start;
+    overflow: hidden;
+}
+
+.map-container #map {
+    height: 100%;
+    width: 95%;
+    margin: auto;
+}
+
+
+.next-bin-heading {
+    color: #000;
+    font: 24px Gilroy-Bold, sans-serif;
+    margin-bottom: 12px;
+    
+}
+
+.direction-info {
+    border-radius: 4px;
+    background-color: #f3f3f3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px 0 30px;
+    margin-bottom: 18px;
+}
+
+.direction-icon-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    background-color: transparent;
+}
+
+.direction-icon {
+    width: 28px;
+    height: 37px;
+    stroke-width: 3px;
+    stroke: #5fa560;
+    border: 3px solid #5fa560;
+}
+
+.direction-text {
+    font-family: Gilroy-Bold, sans-serif;
+}
+
+.direction-text span {
+    font-size: 24px;
+}
+
+.route-info {
+    display: flex;
+    align-items: center;
+    gap: 19px;
+}
+
+.route-divider {
+    width: 3px;
+    height: 109px;
+    background-color: #fff;
+    border: 3px solid #fff;
+}
+
+.route-marker {
+    width: 19px;
+    height: 19px;
+    background-color: #e64c4c;
+}
+
+.route-text {
+    font-family: Gilroy-Bold, sans-serif;
+}
+
+.status-heading {
+    margin-top: 33px;
+    font: 400 24px Gilroy-Bold, sans-serif;
+    color: #000;
+}
+
+.status-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 11px;
+    gap: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    background-color: #f3f3f3;
+    border-radius: 4px;
+}
+
+.status-item:not(:first-child) {
+    margin-top: 10px;
+}
+
+.status-label {
+    font-family: Gilroy-Bold, sans-serif;
+}
+
+.status-value {
+    font-family: Gilroy-Bold, sans-serif;
+}
+
+.status-value.green {
+    color: #5fa560;
+}
+
+.status-value.yellow {
+    color: red;
+}
+
+.report-button-container {
+    border-radius: 4px;
+    box-shadow: 0px -4px 10px 0px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 19px 22px;
+    margin-top: 35px;
+}
+
+.report-button {
+    font-family: Gilroy-Bold, sans-serif;
+    border-radius: 3px;
+    background-color: #e3d235;
+    padding: 11px 17px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}

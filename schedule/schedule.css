@@ -1,0 +1,89 @@
+body {
+    font-family: Gilroy-Bold, sans-serif;
+    background-color: #f0f0f0;
+    margin: 10px;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    gap: 10px;
+    font-size: 17px;
+    color: #5fa560;
+    font-weight: 300;
+    white-space: nowrap;
+    margin-top: 0%;
+}
+
+.menu {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px;
+    position: fixed;
+    top: 10px;
+    left: 0;
+    padding-left: 10px;
+}
+
+.brand-name {
+    font-family: Gilroy-Bold, sans-serif;
+    align-items: center;
+    display: flex;
+    position: fixed;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.setting {
+    width: 34px;
+    height: 34px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+    position: fixed;
+    top: 10px;
+    right: 0;
+    padding-right: 20px;
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    border-color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+h1 {
+    text-align: center;
+}
+
+.schedule-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 15px;
+    font-weight: 120;
+}
+
+.schedule{
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 10px;
+}

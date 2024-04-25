@@ -1,0 +1,193 @@
+body {
+    margin: 20px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    flex-direction: column;
+    scroll-behavior: smooth;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    gap: 10px;
+    font-size: 17px;
+    color: #5fa560;
+    font-weight: 300;
+    white-space: nowrap;
+    margin-top: 0%;
+}
+
+.menu {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px;
+    position: fixed;
+    top: 10px;
+    left: 0;
+    padding-left: 10px;
+}
+
+.brand-name {
+    font-family: Gilroy-Bold, sans-serif;
+    align-items: center;
+    display: flex;
+    position: fixed;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.setting {
+    width: 34px;
+    height: 34px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+    position: fixed;
+    top: 10px;
+    right: 0;
+    padding-right: 20px;
+}
+
+.map-container {
+    position: relative;
+    display: flex;
+    aspect-ratio: 0.9;
+    margin-top: 20px;
+    align-items: start;
+    overflow: hidden;
+}
+
+.map-container #map {
+    height: 100%;
+    width: 95%;
+    margin: auto;
+}
+
+/* .map-background {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+} */
+
+/* .map-overlay {
+    width: 100%;
+    aspect-ratio: 0.9;
+    object-fit: auto;
+    object-position: center;
+    stroke-width: 3px;
+    stroke: #2e42ab;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border: 3px dashed rgba(46, 66, 171, 1);
+} */
+
+.route-info {
+    margin-top: 22px;
+    font: 400 24px Gilroy-Bold, sans-serif;
+    color: #000;
+}
+
+.status-message {
+    margin-top: 25px;
+    font: 400 16px Gilroy-Regular, sans-serif;
+    color: #000;
+}
+
+.status-heading {
+    margin-top: 33px;
+    font: 400 24px Gilroy-Bold, sans-serif;
+    color: #000;
+}
+
+.status-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 4px;
+    gap: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    background-color: #f3f3f3;
+    border-radius: 4px;
+}
+
+.status-item:not(:first-child) {
+    margin-top: 10px;
+}
+
+.status-label {
+    font-family: Gilroy-Bold, sans-serif;
+}
+
+.status-value {
+    font-family: Gilroy-Bold, sans-serif;
+}
+
+.collected-value {
+    color: #5fa560;
+}
+
+.missed-value {
+    color: red;
+}
+
+.start-shift {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 21px 22px;
+    margin-top: 32px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0px -4px 10px 0px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.start-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 8px 10px 17px;
+    gap: 20px;
+    background-color: #5375f6;
+    border-radius: 3px;
+}
+
+.start-text {
+    font-family: Gilroy-Bold, sans-serif;
+    margin: auto 0;
+}
+
+.icon {
+    width: 30px;
+    height: 20px;
+    display: flex;
+    object-position: center;
+    background-color: transparent;
+}
+
+.dustbin {
+    height: 2px;
+    width: 2px;
+}
+.Marker.icon{
+    height: 2px;
+    width: 2px;
+}

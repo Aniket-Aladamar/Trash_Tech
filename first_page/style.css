@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fdfdfd;
+    padding: 0;
+}
+
+.heading {
+    color: #000000;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.div-block {
+    background-color: #67d489;
+    color: #fff;
+    padding: 30px; /* Add padding of 10% */
+    border-radius: 10px;
+    text-align: center; /* Align text to the center */
+    width: 80%;
+    max-width: 600px;
+    height: 230px;
+}
+
+.text-block {
+    margin-top: 10px;
+    color: #000000;
+}
+
+@media screen and (max-width: 600px) {
+    .div-block {
+        width: 75%;
+    }
+}
+.div-block .heading-2{
+    margin-bottom: 0px;
+}
+
+.div-block .heading-3{
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+.div-block, .grid {
+    margin: auto;
+    max-width: 600px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 80%;
+    margin-top: 10%;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px; /* Add rounded borders */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add shadow */
+    position: relative; /* Add this */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Add this */
+}
+/* 
+.grid-item::before {
+    content: "";
+    display: block;
+    padding-top: 100%; 
+} */
+.grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px; /* Add rounded borders to the image as well */
+}
+
+.grid-item:hover {
+    transform: scale(1.05); /* Scale the grid item on hover */
+    background-color: #f0f0f0; /* Change the background color on hover */
+}
+
+@media screen and (min-width: 600px) {
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.fotter {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add shadow */  
+    margin-top: 3%;
+    padding-left: 10%;
+}
+
+.button {
+    display: inline-block;
+    background-color: #5375F6;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: auto; /* Align the button to the left */
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: Arial, sans-serif;
+}
+h1, h2, h3, h4, h5, h6, p {
+    text-align: center;
+}
